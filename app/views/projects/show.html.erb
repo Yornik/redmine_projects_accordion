@@ -99,8 +99,8 @@ $('.accordion').accordion( {
   active: false 
 });
 $(".accordion h3 a.project").click(function() {
-   $('.open').removeAttr("disabled");
-   $('.close').removeAttr("disabled");
+   window.location = $(this).attr('href');
+   return false;
 });
 $('.close').click(function () {
       $('.ui-accordion-header').removeClass('ui-accordion-header-active ui-state-active ui-corner-top').addClass('ui-corner-all').attr({
