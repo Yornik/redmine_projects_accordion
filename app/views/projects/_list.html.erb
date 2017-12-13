@@ -4,7 +4,9 @@
   </div>
 </h3>
 <div>
+  <% if project.short_description %>
   <%= textilizable project.short_description.gsub(/\!.+\!/,""), :project => project %>  
+  <% end %>
   <% if(!project.children.empty?) %>
     <div class="accordion">
       <% project.children.each do |child| %>

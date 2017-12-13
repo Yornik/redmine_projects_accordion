@@ -53,3 +53,8 @@ ul.acc li.section.expanded>.title {
 }
 
 .accordion a.project { display: inline-block;}
+
+.ui-accordion-content-active { height: auto !important; }
+ 
+.ui-accordion-content {width: 73%;}
+.ui-accordion-header {width: 75%;} 
